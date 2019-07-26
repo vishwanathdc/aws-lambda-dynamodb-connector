@@ -30,6 +30,7 @@ var docClient = new AWS.DynamoDB.DocumentClient();
 
 The Promise.resolve() method returns a Promise object that is resolved with a given value.
 pass id as a paramter to fetch values for the primary key (id) you are looking for in dynamodb.
+
 Utils.readUserData = function (id){
     return new Promise((resolve, reject) => {
         loadUserData(id, (res) => {
